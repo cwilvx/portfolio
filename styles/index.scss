@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Virgil";
+  src: url("/font.woff2");
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Virgil", "Open Sans", sans-serif;
+  font-weight: light;
   color: rgb(20, 20, 20);
 }
 

@@ -20,7 +20,9 @@
           <p>{{ project.description }}</p>
         </div>
         <p class="view-project">
-          <a class="project-link" href="#">View project page ➡️&nbsp;&nbsp;&nbsp;</a>
+          <NuxtLink class="project-link" :to="project.pagelink"
+            >View project page ➡️&nbsp;&nbsp;&nbsp;</NuxtLink
+          >
         </p>
       </div>
     </div>
@@ -36,14 +38,12 @@ const projects = [
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sapiente? Quam omnis, nihil tempora, blanditiis optio pariatur eius, exercitationem ducimus porro accusamus asperiores nobis. Nobis ex unde maxime nostrum corporis!",
     image: "/swing.png",
-  },
-  {
-    title: "Swing Music Library manager",
-    description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sapiente? Quam omnis, nihil tempora, blanditiis optio pariatur eius, exercitationem ducimus porro accusamus asperiores nobis. Nobis ex unde maxime nostrum corporis!",
-    image: "https://picsum.photos/800/451",
+    pagelink: "/swingmusicproject",
   },
 ];
+
+// array to store the index of the projects that have been animated
+let animated: number[] = [];
 
 onMounted(() => {
   // get all the project .view-project elements
@@ -59,11 +59,13 @@ onMounted(() => {
           type: "box",
           color: "#0d44da",
           animationDuration: 2000,
+          strokeWidth: 3,
         });
 
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !animated.includes(index)) {
           setTimeout(() => {
             annotation.show();
+            animated.push(index);
           }, 3000);
         }
       });

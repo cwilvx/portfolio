@@ -2,14 +2,19 @@
   <div class="banner rounded">
     <div>
       <h1>Hi 👋</h1>
-      <h2>I'm <span id="name">Mungai</span></h2>
-      <h3>I work with <span id="javascript">Javascript</span> and friends</h3>
+      <h2>I'm <span id="name">Mungai</span> Njoroge</h2>
+      <h3>I build with <span id="javascript">Javascript</span> and Python</h3>
     </div>
     <canvas id="avatarCanvas"> </canvas>
   </div>
   <nuxt-img class="hr" src="/hr.png" format="webp" />
   <Projects />
   <nuxt-img class="hr" src="/hr.png" format="webp" />
+  <AboutMe />
+  <nuxt-img class="hr" src="/hr.png" format="webp" />
+  <Skills />
+  <nuxt-img class="hr" src="/hr.png" format="webp" />
+  <Foot />
 </template>
 
 <script setup lang="ts">
@@ -44,7 +49,7 @@ onMounted(() => {
   const name = document.getElementById("name") as HTMLElement;
   const annotation = annotate(name, {
     type: "box",
-    color: "red",
+    color: "green",
   });
   annotation.show();
 

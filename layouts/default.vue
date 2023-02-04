@@ -1,6 +1,6 @@
 <template>
   <main class="">
-    <div id="page-content" class="page-content rounded">
+    <div id="page-content" class="page-content">
       <nuxt-img
         src="/tape.png"
         width="100"
@@ -13,6 +13,10 @@
       <slot />
     </div>
   </main>
+  <footer style="text-align: center">
+    Powered by <a href="https://nuxt.com">NuxtJS</a> and
+    <a href="https://github.com/rough-stuff">Rough Stuff</a>
+  </footer>
 </template>
 
 <script setup lang="ts">
@@ -45,6 +49,7 @@ main {
   .tape {
     position: absolute;
     z-index: 10;
+    pointer-events: none;
   }
 
   .tape-1,
@@ -59,7 +64,7 @@ main {
 
   .tape-1,
   .tape-4 {
-    left: -2.5rem;
+    left: -3.5rem;
   }
 
   .tape-2,
@@ -68,7 +73,7 @@ main {
   }
 
   .tape-1 {
-    rotate: 90deg;
+    rotate: 94deg;
   }
 
   .tape-2 {
@@ -76,11 +81,11 @@ main {
   }
 
   .tape-3 {
-    rotate: 270deg;
+    rotate: 274deg;
   }
 
   .tape-4 {
-    rotate: 0deg;
+    rotate: -4deg;
   }
 }
 </style>
