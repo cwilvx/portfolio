@@ -2,7 +2,7 @@
   <div class="swing-project-page">
     <NuxtLink to="/">🡄 Go back</NuxtLink>
     <h1>Swing music player 📁🎵</h1>
-    <a href="#">View code on Github</a>
+    <a href="https://github.com/geoffrey45/swingmusic">View code on Github</a>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rem
       suscipit, inventore facilis modi iste praesentium blanditiis consequatur
