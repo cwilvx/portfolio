@@ -35,7 +35,7 @@ const projects = [
     title: "Swing Music Library manager 📁🎵",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sapiente? Quam omnis, nihil tempora, blanditiis optio pariatur eius, exercitationem ducimus porro accusamus asperiores nobis. Nobis ex unde maxime nostrum corporis!",
-    image: "swing.png",
+    image: "/swing.png",
   },
   {
     title: "Swing Music Library manager",

@@ -2,7 +2,7 @@
   <main class="">
     <div id="page-content" class="page-content rounded">
       <nuxt-img
-        src="tape.png"
+        src="/tape.png"
         width="100"
         height="100"
         format="webp"

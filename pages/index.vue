@@ -5,13 +5,11 @@
       <h2>I'm <span id="name">Mungai</span></h2>
       <h3>I work with <span id="javascript">Javascript</span> and friends</h3>
     </div>
-    <!-- <span>this is me</span> -->
     <canvas id="avatarCanvas"> </canvas>
-    <!-- <img src="https://picsum.photos/200" alt="" /> -->
   </div>
-  <img class="hr" src="hr.png" />
+  <nuxt-img class="hr" src="/hr.png" format="webp" />
   <Projects />
-  <img class="hr" src="hr.png" />
+  <nuxt-img class="hr" src="/hr.png" format="webp" />
 </template>
 
 <script setup lang="ts">
@@ -28,7 +26,7 @@ onMounted(() => {
 
   const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
-  const img_src = "cat.jpg";
+  const img_src = "/cat.jpg";
   const imgElem = new Image();
   imgElem.src = img_src;
 
