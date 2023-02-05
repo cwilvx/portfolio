@@ -10,10 +10,11 @@
       >
         <nuxt-img
           :placeholder="[100, 50, 10]"
+          width="750"
+          height="450"
           :src="project.image"
           format="webp"
           :alt="project.title"
-          class="rounded"
         />
         <div class="project-info">
           <h3>{{ index + 1 }}. {{ project.title }}</h3>
@@ -37,7 +38,7 @@ const projects = [
     title: "Swing Music Library manager 📁🎵",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sapiente? Quam omnis, nihil tempora, blanditiis optio pariatur eius, exercitationem ducimus porro accusamus asperiores nobis. Nobis ex unde maxime nostrum corporis!",
-    image: "/swing.png",
+    image: "/swing3.png",
     pagelink: "/swingmusicproject",
   },
 ];
@@ -86,6 +87,7 @@ onMounted(() => {
 
   img {
     width: 100%;
+    border: solid 5px;
   }
 
   .view-project {

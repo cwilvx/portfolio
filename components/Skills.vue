@@ -1,5 +1,5 @@
 <template>
-  <br><br><br>
+  <br /><br /><br />
   <h2>My other skills</h2>
   <p>
     Apart from building interfaces with plain HTML, CSS and Javascript, I also
@@ -11,9 +11,7 @@
     <li>Using Typescript to write better Javascript</li>
     <li>Building backend APIs with Python</li>
     <li>
-      <span id="finding-code" style="margin-right: -1.3rem"
-        >Finding &nbsp;&nbsp;&nbsp;&nbsp;</span
-      >
+      <span id="finding-code">Finding</span>
       the right code to copy from stack overflow (ahem ... 🤫)
     </li>
     <li>Playing a Guitar 🤥</li>
@@ -26,12 +24,13 @@ import { annotate } from "rough-notation";
 onMounted(() => {
   const findingCode = document.getElementById("finding-code") as HTMLElement;
   const annotation = annotate(findingCode, {
-    type: "circle",
-    color: "chocolate",
+    type: "underline",
+    color: "blue",
+    strokeWidth: 3
   });
 
   setTimeout(() => {
     annotation.show();
-  }, 7000);
+  }, 3000);
 });
 </script>
