@@ -5,9 +5,8 @@
       <h1>Swing music library manager 📁🎵</h1>
       <a href="https://github.com/geoffrey45/swingmusic">View code on Github</a>
       <p>
-        Swing music is a self-hosted music player and library manager built with
-        both visual coolness and functionality in mind. It is based on the
-        client-server architecture.
+        Swing music is a beautiful and blazingly-fast self-hosted music player
+        and library manager based on the client-server architecture.
       </p>
     </section>
     <div class="project-tags">
@@ -32,9 +31,7 @@
       format="webp"
       alt="Artist page banner showing Bob Dylan"
     />
-    <figcaption>
-      Artist page banner showing Bob Dylan
-    </figcaption>
+    <figcaption>Artist page banner showing Bob Dylan</figcaption>
 
     <!-- ######### -->
     <br /><br />
@@ -97,34 +94,59 @@
     <br /><br />
     <h2>🏋Challenges</h2>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-      doloribus architecto exercitationem, inventore ipsa sunt? Corporis,
-      ratione illum repellat consectetur nostrum cupiditate sint? Assumenda ipsa
-      quaerat doloribus eaque illo quasi?
+      The main challenge in general was coming up with a simple, cool and
+      intuitive UI. Understanding colors and spacing was rocket science to me at
+      first. I overcame this challenge by taking a few "UI design for
+      developers" 101s at YouTube university. Looking at other people's UI
+      designs at Dribbble also helped me improve my UI design skills.
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ratione
-      inventore delectus voluptates, culpa, deleniti quos nam explicabo
-      consequatur alias quod excepturi quidem provident eos tempore, vitae ipsa
-      doloremque id.
+      Most of the other challenges (like 90%) I faced were
+      <u>optimization</u> problems. For example, reading tags from music files
+      is a very slow and CPU intensive task, I had to find a way to optimize it.
+      I used multiprocessing to spawn multiple processes to read tags from music
+      files. This reduced the time taken to read tags from music files by a huge
+      margin.
     </p>
-    <nuxt-img src="/swing/4.png" format="webp" alt="Album page banner showing an album by Bob Dylan" />
+    <p>
+      I had zero experience with CSS before this project. I had to learn CSS
+      from scratch and apply it to this project. Using CSS grids to structure
+      the UI was hectic. Maintaining a responsive design was also a challenge.
+      Learning CSS layouts in depth helped me understand how the browser works
+      and how to build a responsive design.
+    </p>
+    <nuxt-img
+      src="/swing/4.png"
+      format="webp"
+      alt="Album page banner showing an album by Bob Dylan"
+    />
     <figcaption>Album page banner showing an album by Bob Dylan</figcaption>
     <!-- ######### -->
-    <br /><br /><br />
+    <br /><br />
     <h2>😺Insights</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ratione
-      inventore delectus voluptates, culpa, deleniti quos nam explicabo
-      consequatur alias quod excepturi quidem provident eos tempore, vitae ipsa
-      doloremque id.
+      Taking on this project has helped me learn a lot of things about software
+      development and life in general.
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magnam
-      aliquid obcaecati ad ipsam! Et natus consectetur debitis, placeat
-      reprehenderit similique cumque non beatae praesentium in magnam, eligendi
-      quibusdam voluptatibus?
+      When I started this project, I had no idea how to build a web app. I had
+      very little Javascript and Python knowledge. I had to learn UI design,
+      Git, Typescript, CSS, Vue3, SQL, APIs, Testing, Pinia, multiprocessing,
+      and more from scratch.
     </p>
+    <p>
+      Taking on a project this big can be very overwhelming and can take ages.
+    </p>
+    <p>
+      I have been working on this project since December 2021. I made the first
+      release on January 2023. The time difference between the first commit and
+      the first release is 1 year and 640 commits on the main branch. I have
+      spent sleepless nights and weekends working on this project and I almost
+      ditched it when everything was breaking. The only thing that kept me going
+      ... was my passion for using software to solve problems.
+    </p>
+    <p>THE END</p>
+    <br />
     <NuxtLink to="/">🡄 Go back</NuxtLink>
   </div>
 </template>
@@ -140,7 +162,7 @@
   figcaption {
     text-align: center;
     font-style: italic;
-    scale: .9;
+    scale: 0.9;
   }
 
   .project-tags {

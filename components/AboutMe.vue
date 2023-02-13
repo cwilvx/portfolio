@@ -1,7 +1,7 @@
 <template>
   <div>
     <br><br><br>
-    <h2>About this guy 😶</h2>
+    <h2>About me</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus
       velit alias iure deleniti? Dolor, ea iste. Sunt itaque quos quod nihil rem

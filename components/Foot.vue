@@ -8,7 +8,7 @@
     </p>
     <h3>
       📧
-      <a href="mailto:geoffreymungai45@gmail.com">geoffremungai45@gmail.com</a>
+      <a href="mailto:geoffreymungai45@gmail.com">geoffreymungai45@gmail.com</a>
     </h3>
     <p>You can also check out my Twitter, although I'm not very active</p>
     <h3>

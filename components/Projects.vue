@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Swing Music Library manager 📁🎵",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sapiente? Quam omnis, nihil tempora, blanditiis optio pariatur eius, exercitationem ducimus porro accusamus asperiores nobis. Nobis ex unde maxime nostrum corporis!",
+      "Swing music is a beautiful and blazingly-fast self-hosted music player and library manager based on the client-server architecture. ",
     image: "/swing3.png",
     pagelink: "/swingmusicproject",
   },
