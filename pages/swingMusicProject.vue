@@ -69,7 +69,7 @@
     <!-- ######### -->
     <br /><br />
     <section>
-      <h2>🛠Web Stack and Explanation</h2>
+      <h2>🛠️Web Stack and Explanation</h2>
       <p>The main stack of this project is Python, Flask, and Vue 3.</p>
       <p>
         This project has 2 parts, the backend and the frontend. The backend is
@@ -92,7 +92,7 @@
     </section>
     <!-- ######### -->
     <br /><br />
-    <h2>🏋Challenges</h2>
+    <h2>🪨Challenges</h2>
     <p>
       The main challenge in general was coming up with a simple, cool and
       intuitive UI. Understanding colors and spacing was rocket science to me at
@@ -123,7 +123,7 @@
     <figcaption>Album page banner showing an album by Bob Dylan</figcaption>
     <!-- ######### -->
     <br /><br />
-    <h2>😺Insights</h2>
+    <h2>💡Insights</h2>
     <p>
       Taking on this project has helped me learn a lot of things about software
       development and life in general.

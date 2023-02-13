@@ -11,7 +11,7 @@
 
 <style lang="scss">
 main {
-  max-width: 60rem;
+  max-width: 55rem;
   margin: auto;
   transform: translateX(-1rem);
 
