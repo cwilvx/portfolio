@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-16",
       viewport: "width=500, initial-scale=1",
-      title: "Mungai's Sketchy Porfolio",
+      title: "Mungai's Porfolio",
       meta: [
         {
           name: "Mungai Njoroge's Portfolio site",

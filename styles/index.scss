@@ -1,11 +1,12 @@
 @font-face {
-  font-family: "Virgil";
-  src: url("/font.woff2");
+  font-family: "ProductSans";
+  src: url("/Product Sans Regular.ttf");
   font-display: swap;
 }
 
+// @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
-  font-family: "Virgil", "Open Sans", sans-serif;
+  font-family: "ProductSans", sans-serif;
   font-weight: light;
   color: rgb(20, 20, 20);
   font-size: 1.25rem;

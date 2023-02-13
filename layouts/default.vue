@@ -5,14 +5,13 @@
     </div>
   </main>
   <footer style="text-align: center">
-    Powered by <a href="https://nuxt.com">NuxtJS</a> and
-    <a href="https://github.com/rough-stuff">Rough Stuff</a>
+    Powered by <a href="https://nuxt.com">NuxtJS</a>
   </footer>
 </template>
 
 <style lang="scss">
 main {
-  max-width: 50rem;
+  max-width: 60rem;
   margin: auto;
   transform: translateX(-1rem);
 

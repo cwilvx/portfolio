@@ -78,6 +78,11 @@ onMounted(() => {
   align-items: center;
   position: relative;
 
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+
   img {
     height: 9.5rem;
     width: 9.5rem;

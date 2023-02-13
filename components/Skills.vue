@@ -14,7 +14,6 @@
       <span id="finding-code">Finding</span>
       the right code to copy from stack overflow (ahem ... 🤫)
     </li>
-    <li>Playing a Guitar 🤥</li>
   </ul>
 </template>
 
@@ -26,7 +25,7 @@ onMounted(() => {
   const annotation = annotate(findingCode, {
     type: "underline",
     color: "blue",
-    strokeWidth: 3
+    strokeWidth: 3,
   });
 
   setTimeout(() => {
