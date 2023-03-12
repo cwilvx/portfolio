@@ -15,6 +15,7 @@
       the right code to copy from stack overflow (ahem ... 🤫)
     </li>
   </ul>
+
 </template>
 
 <script setup lang="ts">
@@ -24,7 +25,7 @@ onMounted(() => {
   const findingCode = document.getElementById("finding-code") as HTMLElement;
   const annotation = annotate(findingCode, {
     type: "underline",
-    color: "blue",
+    color: "#df385c",
     strokeWidth: 3,
   });
 

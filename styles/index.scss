@@ -6,11 +6,16 @@
 
 body {
   font-family: "ProductSans", sans-serif;
-  color: rgb(20, 20, 20);
-  font-size: 1.25rem;
+  color: rgb(240, 233, 233);
+  font-size: 1.15rem;
   line-height: 2.5rem;
+  background-color: #111011;
 }
 
 .rounded {
   border-radius: 1rem;
+}
+
+a {
+  color: #df385c;
 }

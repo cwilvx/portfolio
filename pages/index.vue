@@ -31,7 +31,7 @@ onMounted(() => {
 
   const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
-  const img_src = "/cat.jpg";
+  const img_src = "/avatar.jpeg";
   const imgElem = new Image();
   imgElem.src = img_src;
 
@@ -39,8 +39,8 @@ onMounted(() => {
     rc.rectangle(5, 5, 150, 150, {
       roughness: 1.5,
       fillStyle: "cross-hatch",
-      fill: "brown",
-      stroke: "black",
+      fill: "#df385c",
+      stroke: "#fa1143",
       strokeWidth: 6,
     });
     ctx.drawImage(imgElem, 5, 5, 145, 145);
@@ -49,14 +49,14 @@ onMounted(() => {
   const name = document.getElementById("name") as HTMLElement;
   const annotation = annotate(name, {
     type: "box",
-    color: "green",
+    color: "#fa1143",
   });
   annotation.show();
 
   const javascript = document.getElementById("javascript") as HTMLElement;
   const annotation2 = annotate(javascript, {
     type: "highlight",
-    color: "orange",
+    color: "#fa1143",
   });
 
   setTimeout(() => {

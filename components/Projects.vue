@@ -55,7 +55,7 @@ onMounted(() => {
       entries.forEach((entry) => {
         const annotation = annotate(element, {
           type: "box",
-          color: "#0d44da",
+          color: "#fa1143",
           animationDuration: 2000,
           strokeWidth: 3,
         });

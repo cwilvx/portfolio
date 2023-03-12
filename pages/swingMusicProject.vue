@@ -1,6 +1,6 @@
 <template>
   <div class="swing-project-page">
-    <NuxtLink to="/">🡄 Go back</NuxtLink>
+    <NuxtLink to="/">← Go back</NuxtLink>
     <section>
       <h1>Swing music library manager 📁🎵</h1>
       <a href="https://github.com/geoffrey45/swingmusic">View code on Github</a>
@@ -147,7 +147,7 @@
     </p>
     <p>THE END</p>
     <br />
-    <NuxtLink to="/">🡄 Go back</NuxtLink>
+    <NuxtLink to="/">← Go back</NuxtLink>
   </div>
 </template>
 
