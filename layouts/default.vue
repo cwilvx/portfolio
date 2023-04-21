@@ -13,7 +13,6 @@
 main {
   max-width: 55rem;
   margin: auto;
-  transform: translateX(-1rem);
 
   #page-content {
     padding: 2rem;

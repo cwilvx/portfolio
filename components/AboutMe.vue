@@ -1,6 +1,5 @@
 <template>
   <div>
-    <br /><br /><br />
     <h2>About me</h2>
     <p>
       I am a software developer driven by a love for music and a desire to make

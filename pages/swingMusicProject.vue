@@ -1,9 +1,9 @@
 <template>
   <div class="swing-project-page">
-    <NuxtLink to="/">← Go back</NuxtLink>
     <section>
-      <h1>Swing music library manager 📁🎵</h1>
-      <a href="https://github.com/geoffrey45/swingmusic">View code on Github</a>
+      <h1>Swing music - player and library manager 🎵</h1>
+      <a href="https://swingmusic.vercel.app" target="_blank">Project homepage</a> &ThickSpace;
+      <a href="https://github.com/geoffrey45/swingmusic" target="_blank">View code</a>
       <p>
         Swing music is a beautiful and blazingly-fast self-hosted music player
         and library manager based on the client-server architecture.
@@ -153,6 +153,24 @@
 
 <style lang="scss">
 .swing-project-page {
+  a {
+    margin-right: 1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+
+    &:hover {
+        outline: solid;
+      }
+
+    &:nth-child(2) {
+      background-color: rgba(0, 132, 255, 0.158);
+    }
+
+    &:nth-child(3) {
+      background-color: rgba(0, 132, 255, 0);    }
+  }
+
   img {
     width: 100%;
     object-fit: cover;

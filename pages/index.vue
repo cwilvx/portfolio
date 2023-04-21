@@ -1,76 +1,39 @@
 <template>
   <div class="banner rounded">
     <div>
-      <h1>Hi 👋</h1>
-      <h2>I'm <span id="name">Mungai</span> Njoroge</h2>
-      <h3>I build with <span id="javascript">Javascript</span> and Python</h3>
+      <h1>Hello there 👋</h1>
+      <h2>My name is <span id="name">Mungai</span> Njoroge</h2>
+      <h3>
+        ... and I build with <span id="javascript">Javascript</span> and Python
+      </h3>
     </div>
-    <canvas id="avatarCanvas"> </canvas>
+    <img id="avatar" src="/avatar.jpeg" />
+    <div class="social-icons">
+      <NuxtLink to="https://github.com/mungai-njoroge">
+        <NuxtImg src="/github.svg"></NuxtImg>
+      </NuxtLink>
+      <NuxtLink to="https://twitter.com/mu_njoroge">
+        <NuxtImg src="/twitter.svg"></NuxtImg>
+      </NuxtLink>
+      <!-- <NuxtLink to="https://github.com/mungai-njoroge"> L </NuxtLink> -->
+    </div>
   </div>
-  <nuxt-img class="hr" src="/hr.png" format="webp" />
+  <hr />
   <Projects />
-  <nuxt-img class="hr" src="/hr.png" format="webp" />
+  <hr />
   <AboutMe />
-  <nuxt-img class="hr" src="/hr.png" format="webp" />
+  <hr />
   <Skills />
-  <nuxt-img class="hr" src="/hr.png" format="webp" />
+  <hr />
   <Foot />
 </template>
 
-<script setup lang="ts">
-//@ts-ignore
-import rough from "roughjs/bundled/rough.esm";
-import { annotate } from "rough-notation";
-
-onMounted(() => {
-  const canvas = document.getElementById("avatarCanvas") as HTMLCanvasElement;
-  canvas.width = 200;
-  canvas.height = 200;
-
-  const rc = rough.canvas(canvas);
-
-  const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
-
-  const img_src = "/avatar.jpeg";
-  const imgElem = new Image();
-  imgElem.src = img_src;
-
-  imgElem.onload = () => {
-    rc.rectangle(5, 5, 150, 150, {
-      roughness: 1.5,
-      fillStyle: "cross-hatch",
-      fill: "#df385c",
-      stroke: "#fa1143",
-      strokeWidth: 6,
-    });
-    ctx.drawImage(imgElem, 5, 5, 145, 145);
-  };
-
-  const name = document.getElementById("name") as HTMLElement;
-  const annotation = annotate(name, {
-    type: "box",
-    color: "#fa1143",
-  });
-  annotation.show();
-
-  const javascript = document.getElementById("javascript") as HTMLElement;
-  const annotation2 = annotate(javascript, {
-    type: "highlight",
-    color: "#fa1143",
-  });
-
-  setTimeout(() => {
-    annotation2.show();
-  }, 1000);
-});
-</script>
-
 <style lang="scss">
-.hr {
-  width: 100%;
-  pointer-events: none;
-  margin: 1rem 0;
+hr {
+  margin: 5rem 0;
+  opacity: 0.25;
 }
+
 .banner {
   display: grid;
   grid-template-columns: 1fr max-content;
@@ -83,23 +46,21 @@ onMounted(() => {
     padding: 1rem 0;
   }
 
-  img {
-    height: 9.5rem;
-    width: 9.5rem;
-    border-radius: 50%;
-    object-fit: cover;
-    // border: solid 0.25rem white;
-    position: absolute;
-    display: none;
+  #avatar {
+    height: 10rem;
+  }
+}
 
-    right: 0.25rem;
-    top: 4rem;
+.social-icons {
+  width: 100%;
+  margin-top: 2rem;
+
+  img {
+    height: 1.75rem;
   }
 
-  //   span {
-  //     position: absolute;
-  //     right: 15rem;
-  //     top: 3rem;
-  //   }
+  & > * {
+    margin: 0 1rem;
+  }
 }
 </style>

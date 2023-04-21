@@ -14,86 +14,118 @@
           :alt="'image for:' + project.title"
         />
         <div class="project-info">
-          <h3>{{ index + 1 }}. {{ project.title }}</h3>
-          <p>{{ project.description }}</p>
+          <NuxtLink :to="project.pagelink">
+            <h3>{{ project.title }}</h3>
+          </NuxtLink>
+          <p v-for="p in project.description">{{ p }}</p>
+          <div class="buttons">
+            <NuxtLink class="project-link" :to="project.pagelink"
+              >View project</NuxtLink
+            >
+            <NuxtLink target="blank" class="project-link" :to="project.website"
+              >Project homepage</NuxtLink
+            >
+          </div>
         </div>
-        <p class="view-project">
-          <NuxtLink class="project-link" :to="project.pagelink"
-            >View project page ➡️&nbsp;&nbsp;&nbsp;</NuxtLink
-          >
-        </p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { annotate } from "rough-notation";
-
 const projects = [
   {
-    title: "Swing Music Library manager 📁🎵",
-    description:
-      "Swing music is a beautiful and blazingly-fast self-hosted music player and library manager based on the client-server architecture. ",
+    title: "Swing Music 🎵",
+    description: [
+      "A self-hosted streaming server for your local audio files with a beautiful browser-based client. Like a cooler Spotify ... but bring your own music.",
+      "Based on the client-server architecture and written in Python, Typescript and Vue 3.",
+    ],
     image: "/swing.png",
     pagelink: "/swingmusicproject",
+    website: "https://swingmusic.vercel.app"
   },
 ];
-
-// array to store the index of the projects that have been animated
-let animated: number[] = [];
-
-onMounted(() => {
-  // get all the project .view-project elements
-  const viewProjectElements = document.querySelectorAll(
-    ".view-project"
-  ) as NodeListOf<HTMLElement>;
-  // loop through them
-  viewProjectElements.forEach((element, index) => {
-    //  when the element enters the viewport, show the annotation
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const annotation = annotate(element, {
-          type: "box",
-          color: "#fa1143",
-          animationDuration: 2000,
-          strokeWidth: 3,
-        });
-
-        if (entry.isIntersecting && !animated.includes(index)) {
-          setTimeout(() => {
-            annotation.show();
-            animated.push(index);
-          }, 3000);
-        }
-      });
-    });
-
-    observer.observe(element);
-  });
-});
 </script>
 
 <style lang="scss">
+@import "../styles/index.scss";
+
 .projects {
   .project-list {
     margin-top: 3rem;
     display: grid;
     gap: 2rem;
-  }
-
-  img {
     width: 100%;
   }
 
-  .view-project {
-    display: block;
-    font-weight: bold;
-    width: max-content;
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgba(59, 119, 250, 0.103);
+    border: solid 1px rgba(0, 110, 255, 0.103);
+
+    @media (max-width: 745px) {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: left;
+      border-radius: 0.5rem;
+      aspect-ratio: 1.3;
+    }
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     a {
       text-decoration: none;
     }
+
+    h3 {
+      margin: 0;
+      color: $blue;
+      font-size: x-large;
+    }
+
+    p {
+      margin: 0;
+      color: rgb(36, 35, 35);
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1rem;
+
+    & > * {
+      padding: 0 0.75rem;
+
+      &:hover {
+        outline: solid;
+      }
+    }
+  }
+
+  .project-link {
+    border-radius: 0.5rem;
+    border: solid 1px $blue;
+    background-color: rgba(0, 132, 255, 0.144);
+    border: none;
+  }
+
+  .project-link:nth-child(2) {
+    background-color: rgba(0, 132, 255, 0);
   }
 }
 </style>

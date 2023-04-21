@@ -12,8 +12,6 @@
     "nuxt": "^3.1.2"
   },
   "dependencies": {
-    "rough-notation": "^0.5.1",
-    "roughjs": "^4.5.2",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0"
   }
