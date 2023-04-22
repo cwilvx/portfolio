@@ -2,8 +2,13 @@
   <div class="swing-project-page">
     <section>
       <h1>Swing music - player and library manager 🎵</h1>
-      <a href="https://swingmusic.vercel.app" target="_blank">Project homepage</a> &ThickSpace;
-      <a href="https://github.com/geoffrey45/swingmusic" target="_blank">View code</a>
+      <a href="https://swingmusic.vercel.app" target="_blank"
+        >Project homepage</a
+      >
+      &ThickSpace;
+      <a href="https://github.com/geoffrey45/swingmusic" target="_blank"
+        >View code</a
+      >
       <p>
         Swing music is a beautiful and blazingly-fast self-hosted music player
         and library manager based on the client-server architecture.
@@ -100,6 +105,13 @@
       developers" 101s at YouTube university. Looking at other people's UI
       designs at Dribbble also helped me improve my UI design skills.
     </p>
+    The book
+    <a href="https://www.refactoringui.com/" target="_blank"
+      >"Refactoring UI"</a
+    >
+    by Adam Wathan & Steve Schoger was a game changer for me. It helped me
+    understand more about color, spacing, typography and other UI design
+    concepts.
     <p>
       Most of the other challenges (like 90%) I faced were
       <u>optimization</u> problems. For example, reading tags from music files
@@ -143,7 +155,8 @@
       the first release is 1 year and 640 commits on the main branch. I have
       spent sleepless nights and weekends working on this project and I almost
       ditched it when everything was breaking. The only thing that kept me going
-      ... was my passion for using software to solve problems.
+      ... was my love for music and the passion for using software to solve my
+      problems.
     </p>
     <p>THE END</p>
     <br />
@@ -160,15 +173,16 @@
     border-radius: 0.35rem;
 
     &:hover {
-        outline: solid;
-      }
+      outline: solid;
+    }
 
     &:nth-child(2) {
       background-color: rgba(0, 132, 255, 0.158);
     }
 
     &:nth-child(3) {
-      background-color: rgba(0, 132, 255, 0);    }
+      background-color: rgba(0, 132, 255, 0);
+    }
   }
 
   img {
