@@ -2,11 +2,17 @@
   <div class="swing-project-page">
     <section>
       <h1>Swing music - player and library manager 🎵</h1>
-      <a href="https://swingmusic.vercel.app" target="_blank"
+      <a
+        href="https://swingmusic.vercel.app"
+        target="_blank"
+        class="btn btn-primary"
         >Project homepage</a
       >
       &ThickSpace;
-      <a href="https://github.com/geoffrey45/swingmusic" target="_blank"
+      <a
+        class="btn"
+        href="https://github.com/geoffrey45/swingmusic"
+        target="_blank"
         >View code</a
       >
       <p>
@@ -106,7 +112,7 @@
       designs at Dribbble also helped me improve my UI design skills.
     </p>
     The book
-    <a href="https://www.refactoringui.com/" target="_blank"
+    <a href="https://www.refactoringui.com/" target="_blank" class="btn"
       >"Refactoring UI"</a
     >
     by Adam Wathan & Steve Schoger was a game changer for me. It helped me
@@ -167,21 +173,9 @@
 <style lang="scss">
 .swing-project-page {
   a {
-    margin-right: 1rem;
-    text-decoration: none;
-    padding: 0.5rem;
-    border-radius: 0.35rem;
-
-    &:hover {
-      outline: solid;
-    }
-
     &:nth-child(2) {
-      background-color: rgba(0, 132, 255, 0.158);
-    }
-
-    &:nth-child(3) {
-      background-color: rgba(0, 132, 255, 0);
+      margin-right: 1rem;
+      // background-color: rgba(0, 132, 255, 0.158);
     }
   }
 

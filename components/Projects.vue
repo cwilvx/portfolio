@@ -19,10 +19,10 @@
           </NuxtLink>
           <p v-for="p in project.description">{{ p }}</p>
           <div class="buttons">
-            <NuxtLink class="project-link" :to="project.pagelink"
+            <NuxtLink class="btn btn-primary" :to="project.pagelink"
               >View project</NuxtLink
             >
-            <NuxtLink target="blank" class="project-link" :to="project.website"
+            <NuxtLink target="blank" class="btn" :to="project.website"
               >Project homepage</NuxtLink
             >
           </div>
@@ -42,7 +42,7 @@ const projects = [
     ],
     image: "/swing.png",
     pagelink: "/swingmusicproject",
-    website: "https://swingmusic.vercel.app"
+    website: "https://swingmusic.vercel.app",
   },
 ];
 </script>
@@ -87,6 +87,7 @@ const projects = [
     justify-content: flex-end;
 
     a {
+      margin-right: 1rem;
       text-decoration: none;
     }
 
@@ -102,30 +103,6 @@ const projects = [
       line-height: 1.75;
       margin-bottom: 1rem;
     }
-  }
-
-  .buttons {
-    display: flex;
-    gap: 1rem;
-
-    & > * {
-      padding: 0 0.75rem;
-
-      &:hover {
-        outline: solid;
-      }
-    }
-  }
-
-  .project-link {
-    border-radius: 0.5rem;
-    border: solid 1px $blue;
-    background-color: rgba(0, 132, 255, 0.144);
-    border: none;
-  }
-
-  .project-link:nth-child(2) {
-    background-color: rgba(0, 132, 255, 0);
   }
 }
 </style>

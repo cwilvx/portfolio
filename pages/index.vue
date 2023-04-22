@@ -9,13 +9,16 @@
     </div>
     <img id="avatar" src="/avatar.jpeg" />
     <div class="social-icons">
-      <NuxtLink to="https://github.com/mungai-njoroge">
-        <NuxtImg src="/github.svg"></NuxtImg>
+      <NuxtLink
+        to="https://github.com/mungai-njoroge"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        Github
       </NuxtLink>
-      <NuxtLink to="https://twitter.com/mu_njoroge">
-        <NuxtImg src="/twitter.svg"></NuxtImg>
+      <NuxtLink to="https://twitter.com/mu_njoroge" target="_blank" class="btn">
+        Twitter
       </NuxtLink>
-      <!-- <NuxtLink to="https://github.com/mungai-njoroge"> L </NuxtLink> -->
     </div>
   </div>
   <hr />
@@ -53,14 +56,9 @@ hr {
 
 .social-icons {
   width: 100%;
-  margin-top: 2rem;
 
-  img {
-    height: 1.75rem;
-  }
-
-  & > * {
-    margin: 0 1rem;
+  a {
+    margin-right: 1rem;
   }
 }
 </style>
