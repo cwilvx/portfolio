@@ -16,8 +16,9 @@
         >View code</a
       >
       <p>
-        Swing music is a beautiful and blazingly-fast self-hosted music player
-        and library manager based on the client-server architecture.
+        Swing music is a beautiful and blazingly-fast self-hosted music
+        streaming server and library manager with a beautiful browser-based
+        client.
       </p>
     </section>
     <div class="project-tags">
@@ -36,7 +37,9 @@
         >■ {{ tag }}</span
       >
     </div>
-
+    Swing Music is based on the client-server architecture and written with
+    Python, Typescript and Vue.
+    <br /><br />
     <nuxt-img
       src="/swing/1.png"
       format="webp"
@@ -45,6 +48,7 @@
     <figcaption>Artist page banner showing Bob Dylan</figcaption>
 
     <!-- ######### -->
+
     <br /><br />
     <section>
       <h2>⭐Project Objective and Purpose</h2>
@@ -81,7 +85,9 @@
     <br /><br />
     <section>
       <h2>🛠️Web Stack and Explanation</h2>
-      <p>The main stack of this project is Python, Flask, and Vue 3.</p>
+      <p>
+        The main stack of this project is Python3, Flask, Vue 3 and Typescript.
+      </p>
       <p>
         This project has 2 parts, the backend and the frontend. The backend is
         written in Python. I decided to use Python because it was the language I

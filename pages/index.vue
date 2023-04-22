@@ -10,9 +10,15 @@
     <img id="avatar" src="/avatar.jpeg" />
     <div class="social-icons">
       <NuxtLink
+        to="/blog"
+        class="btn btn-primary"
+      >
+        View blog
+      </NuxtLink>
+      <NuxtLink
         to="https://github.com/mungai-njoroge"
         target="_blank"
-        class="btn btn-primary"
+        class="btn"
       >
         Github
       </NuxtLink>
