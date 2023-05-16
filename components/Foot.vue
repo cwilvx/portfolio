@@ -19,8 +19,8 @@
     </h3>
     <p>If you want to check out code I've written, check my Github.</p>
     <h3>
-      <a class="btn" target="_blank" href="https://github.com/geoffrey45"
-        >github.com/@geoffrey45</a
+      <a class="btn" target="_blank" href="https://github.com/mungai-njoroge"
+        >github.com/@mungai-njoroge</a
       >
     </h3>
   </div>
