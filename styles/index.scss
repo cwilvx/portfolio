@@ -3,13 +3,21 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgb(20, 20, 20);
   font-size: 1.15rem;
-  line-height: 2.5rem;
-  background-color: #e0e0e0;
+  line-height: 1.5;
+  background-color: #ffffff;
   margin: 0;
 }
 
 .rounded {
   border-radius: 1rem;
+}
+
+.rounded-sm {
+  border-radius: 0.5rem;
+}
+
+h2, h1 {
+  margin: .5rem 0;
 }
 
 // ---- VARIABLES ---- //
@@ -45,9 +53,9 @@ $brown: rgb(172, 142, 104);
 $indigo: #5e5ce6;
 $teal: rgb(64, 200, 224);
 
-a {
-  color: $darkblue;
-}
+// a {
+//   color: $darkblue;
+// }
 
 .btn {
   border-radius: 0.35rem;
@@ -61,4 +69,20 @@ a {
 
 .btn-primary {
   background-color: rgba(0, 132, 255, 0.158);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000f2 !important;
+    color: #e4e3e3
+  }
+
+  a {
+    color: rgb(122, 141, 252)
+  }
+
+  a:visited {
+    color: rgb(220, 134, 241)
+  }
 }

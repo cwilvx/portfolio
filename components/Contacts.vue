@@ -1,6 +1,5 @@
 <template>
   <div>
-    <br /><br /><br />
     <h2>Contacts</h2>
     <p>
       If you would like to reach out, here's my email adress. I will reply as

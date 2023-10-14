@@ -1,57 +1,48 @@
 <template>
   <div class="swing-project-page">
     <section>
-      <h1>Swing music - player and library manager 🎵</h1>
-      <a
-        href="https://swingmusic.vercel.app"
-        target="_blank"
-        class="btn btn-primary"
-        >Project homepage</a
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
       >
-      &ThickSpace;
-      <a
-        class="btn"
-        href="https://github.com/geoffrey45/swingmusic"
-        target="_blank"
-        >View code</a
-      >
-      <p>
+        <h2>
+          Swing Music <CopyLinkThingIcon :link="'/projects/swingmusic'" />
+        </h2>
+        <div>
+          <a href="https://swingmusic.vercel.app" target="_blank"
+            >Go to project</a
+          >
+          &ThickSpace;
+          <a href="https://github.com/geoffrey45/swingmusic" target="_blank"
+            >View code</a
+          >
+        </div>
+      </div>
+      <div>
         Swing music is a beautiful and blazingly-fast self-hosted music
         streaming server and library manager with a beautiful browser-based
-        client.
-      </p>
+        client. Swing Music is based on the client-server architecture and
+        written with Python, Typescript and Vue.
+      </div>
     </section>
-    <div class="project-tags">
-      <span
-        v-for="tag in [
-          'Music',
-          'Self hosted',
-          'Vue3',
-          'Pinia',
-          'Python',
-          'Flask',
-          'SQLite',
-          '2021 - Present',
-        ]"
-        :key="tag"
-        >■ {{ tag }}</span
-      >
-    </div>
-    Swing Music is based on the client-server architecture and written with
-    Python, Typescript and Vue.
     <br /><br />
-    <nuxt-img
-      src="/swing/1.png"
-      format="webp"
-      alt="Artist page banner showing Bob Dylan"
-    />
-    <figcaption>Artist page banner showing Bob Dylan</figcaption>
-
-    <!-- ######### -->
-
+    <picture>
+      <source
+        srcset="/swingmusic/dark/head.png"
+        media="(prefers-color-scheme: dark)"
+      />
+      <nuxt-img
+        src="/swingmusic/light/head.png"
+        format="webp"
+        alt="Section in artist page showing albums by Bob Dylan"
+      />
+    </picture>
     <br /><br />
     <section>
-      <h2>⭐Project Objective and Purpose</h2>
+      <h3>Project Objective and Purpose</h3>
       <p>
         I love music and I have a huge collection of music that I have collected
         over the years. I found it very hard to find and play the music that I
@@ -71,20 +62,22 @@
         playlists based on my listening activity combined with a cool and easy
         to use interface was the main thing that I was going for.
       </p>
-      <nuxt-img
-        src="/swing/2.png"
-        format="webp"
-        alt="Section in artist page showing albums by Bob Dylan"
-      />
-      <figcaption>
-        Section in artist page showing albums by Bob Dylan
-      </figcaption>
+      <picture>
+        <source
+          srcset="/swingmusic/dark/1.png"
+          media="(prefers-color-scheme: dark)"
+        />
+        <nuxt-img
+          src="/swingmusic/light/1.png"
+          format="webp"
+          alt="Section in artist page showing albums by Bob Dylan"
+        />
+      </picture>
     </section>
 
     <!-- ######### -->
-    <br /><br />
     <section>
-      <h2>🛠️Web Stack and Explanation</h2>
+      <h3>Web Stack and Explanation</h3>
       <p>
         The main stack of this project is Python3, Flask, Vue 3 and Typescript.
       </p>
@@ -98,18 +91,20 @@
         The frontend is written in Vue 3. I decided to use Vue 3 because it is a
         very performant framework and is easy to pickup as a web dev newbie.
       </p>
-      <nuxt-img
-        src="/swing/3.png"
-        format="webp"
-        alt="Section in artist page showing top tracks by Bob Dylan"
-      />
-      <figcaption>
-        Section in artist page showing top tracks by Bob Dylan
-      </figcaption>
+      <picture>
+        <source
+          srcset="/swingmusic/dark/2.png"
+          media="(prefers-color-scheme: dark)"
+        />
+        <nuxt-img
+          src="/swingmusic/light/2.png"
+          format="webp"
+          alt="Section in artist page showing albums by Bob Dylan"
+        />
+      </picture>
     </section>
     <!-- ######### -->
-    <br /><br />
-    <h2>🪨Challenges</h2>
+    <h3>Challenges</h3>
     <p>
       The main challenge in general was coming up with a simple, cool and
       intuitive UI. Understanding colors and spacing was rocket science to me at
@@ -139,15 +134,18 @@
       Learning CSS layouts in depth helped me understand how the browser works
       and how to build a responsive design.
     </p>
-    <nuxt-img
-      src="/swing/4.png"
-      format="webp"
-      alt="Album page banner showing an album by Bob Dylan"
-    />
-    <figcaption>Album page banner showing an album by Bob Dylan</figcaption>
-    <!-- ######### -->
-    <br /><br />
-    <h2>💡Insights</h2>
+    <picture>
+      <source
+        srcset="/swingmusic/dark/3.png"
+        media="(prefers-color-scheme: dark)"
+      />
+      <nuxt-img
+        src="/swingmusic/light/3.png"
+        format="webp"
+        alt="Section in artist page showing albums by Bob Dylan"
+      />
+    </picture>
+    <h3>Insights</h3>
     <p>
       Taking on this project has helped me learn a lot of things about software
       development and life in general.
@@ -170,6 +168,18 @@
       ... was my love for music and the passion for using software to solve my
       problems.
     </p>
+    <picture>
+      <source
+        srcset="/swingmusic/dark/5.png"
+        media="(prefers-color-scheme: dark)"
+      />
+      <nuxt-img
+        src="/swingmusic/light/5.png"
+        format="webp"
+        alt="Section in artist page showing albums by Bob Dylan"
+      />
+    </picture>
+    <p>... and they lived happily ever after.</p>
     <p>THE END</p>
     <br />
     <NuxtLink to="/">← Go back</NuxtLink>
@@ -178,23 +188,9 @@
 
 <style lang="scss">
 .swing-project-page {
-  a {
-    &:nth-child(2) {
-      margin-right: 1rem;
-      // background-color: rgba(0, 132, 255, 0.158);
-    }
-  }
-
   img {
     width: 100%;
     object-fit: cover;
-    border-radius: 1rem;
-  }
-
-  figcaption {
-    text-align: center;
-    font-style: italic;
-    scale: 0.9;
   }
 
   .project-tags {
