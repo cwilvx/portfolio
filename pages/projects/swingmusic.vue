@@ -2,6 +2,7 @@
   <div class="swing-project-page">
     <section>
       <div
+        class="title"
         style="
           display: flex;
           align-items: center;
@@ -185,9 +186,29 @@
     <NuxtLink to="/">← Go back</NuxtLink>
   </div>
 </template>
-
+<script setup lang="ts">
+useHead({
+  title: "Swing Music | Mungai",
+  meta: [
+    { name: "description", content: "Read about the Swing Music project" },
+  ],
+});
+</script>
 <style lang="scss">
 .swing-project-page {
+  .title {
+    margin-bottom: 1rem;
+
+    h2 {
+      margin: 0;
+      border-bottom: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+  }
   img {
     width: 100%;
     object-fit: cover;

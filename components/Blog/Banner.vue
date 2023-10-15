@@ -1,18 +1,19 @@
 <template>
-  <NuxtLink to="/">← Go back</NuxtLink>
   <div class="blogbanner rounded-sm">
     <h1>Blog</h1>
-    I write about my experiences as a software developer and bootstrapper from
-    time to time. (I am still working on my first post)
+    I sometimes write about my experiences as a micro independent software
+    vendor. Check out my posts below.
   </div>
 </template>
-
-<script setup lang="ts"></script>
 
 <style lang="scss">
 .blogbanner {
   margin-top: 1rem;
-  padding: 2rem;
+  padding: 1rem;
+
+  h1 {
+    margin: 1rem 0;
+  }
 
   background: linear-gradient(
       56deg,

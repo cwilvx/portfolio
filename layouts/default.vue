@@ -16,8 +16,8 @@
 <style lang="scss">
 .main {
   max-width: 55rem;
-  margin: auto;
   padding: 1rem;
+  margin: 0 auto;
 
   #page-content {
     margin: 5rem 0;
