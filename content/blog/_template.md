@@ -1,7 +1,7 @@
 ---
 title: Some title
 date: 12 Oct 2019
-draft: true
+_draft: true
 ---
 
 Write your content here.
