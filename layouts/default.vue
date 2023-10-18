@@ -8,14 +8,14 @@
       <slot />
     </div>
   </div>
-  <footer style="text-align: center">
+  <footer style="text-align: center; margin-bottom: .5rem;">
     © Mungai Njoroge 2022 - {{ new Date().getFullYear() }}
   </footer>
 </template>
 
 <style lang="scss">
 .main {
-  max-width: 55rem;
+  max-width: 50rem;
   padding: 1rem;
   margin: 0 auto;
 

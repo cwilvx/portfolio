@@ -13,20 +13,26 @@
           Swing Music <CopyLinkThingIcon :link="'/projects/swingmusic'" />
         </h2>
         <div>
-          <a href="https://swingmusic.vercel.app" target="_blank"
-            >Go to project</a
+          <a
+            class="btn btn-primary"
+            href="https://swingmusic.vercel.app"
+            target="_blank"
+            >homepage</a
           >
+
           &ThickSpace;
-          <a href="https://github.com/geoffrey45/swingmusic" target="_blank"
-            >View code</a
+          <a
+            class="btn btn-primary"
+            href="https://github.com/geoffrey45/swingmusic"
+            target="_blank"
+            >github</a
           >
         </div>
       </div>
       <div>
-        Swing music is a beautiful and blazingly-fast self-hosted music
-        streaming server and library manager with a beautiful browser-based
-        client. Swing Music is based on the client-server architecture and
-        written with Python, Typescript and Vue.
+        Swing music is a beautiful and "blazingly-fast" music player with a
+        beautiful browser-based client. Base on the the client-server
+        architecture, Swing Music is written with Python, Typescript and Vue.
       </div>
     </section>
     <br /><br />
@@ -83,13 +89,13 @@
         The main stack of this project is Python3, Flask, Vue 3 and Typescript.
       </p>
       <p>
-        This project has 2 parts, the backend and the frontend. The backend is
+        This project has 2 parts, the server and the client. The server is
         written in Python. I decided to use Python because it was the language I
         was most comfortable with. I also wanted to learn more about Python and
         Flask.
       </p>
       <p>
-        The frontend is written in Vue 3. I decided to use Vue 3 because it is a
+        The client is written in Vue 3. I decided to use Vue 3 because it is a
         very performant framework and is easy to pickup as a web dev newbie.
       </p>
       <picture>
@@ -113,27 +119,29 @@
       developers" 101s at YouTube university. Looking at other people's UI
       designs at Dribbble also helped me improve my UI design skills.
     </p>
-    The book
-    <a href="https://www.refactoringui.com/" target="_blank" class="btn"
-      >"Refactoring UI"</a
-    >
-    by Adam Wathan & Steve Schoger was a game changer for me. It helped me
+    The
+    <a href="https://www.refactoringui.com/" target="_blank">Refactoring UI</a>
+    book by Adam Wathan & Steve Schoger was a game changer for me. It helped me
     understand more about color, spacing, typography and other UI design
     concepts.
     <p>
-      Most of the other challenges (like 90%) I faced were
-      <u>optimization</u> problems. For example, reading tags from music files
-      is a very slow and CPU intensive task, I had to find a way to optimize it.
-      I used multiprocessing to spawn multiple processes to read tags from music
-      files. This reduced the time taken to read tags from music files by a huge
+      Most of the other challenges (like 90% of them) I faced were optimization
+      problems. For example, reading tags from music files is a very slow and
+      CPU intensive task, I had to find a way to optimize it. I used
+      multiprocessing to spawn multiple threads to read tags from music files.
+      This reduced the time taken to read tags from music files by a huge
       margin.
     </p>
     <p>
       I had zero experience with CSS before this project. I had to learn CSS
-      from scratch and apply it to this project. Using CSS grids to structure
-      the UI was hectic. Maintaining a responsive design was also a challenge.
+      from scratch and apply it to this project. Using CSS grids to create the
+      layout was hectic. Maintaining a responsive design was also a challenge.
       Learning CSS layouts in depth helped me understand how the browser works
-      and how to build a responsive design.
+      and how to build a responsive design. The
+      <a href="https://www.joshwcomeau.com/css/understanding-layout-algorithms/"
+        >Understanding Layout Algrothims</a
+      >
+      article by Josh Comeau was very helpful in understanding CSS layouts.
     </p>
     <picture>
       <source
@@ -143,7 +151,7 @@
       <nuxt-img
         src="/swingmusic/light/3.png"
         format="webp"
-        alt="Section in artist page showing albums by Bob Dylan"
+        alt="Section in artist page showing albums by Troye Sivan"
       />
     </picture>
     <h3>Insights</h3>
@@ -158,16 +166,25 @@
       and more from scratch.
     </p>
     <p>
-      Taking on a project this big can be very overwhelming and can take ages.
+      Taking on a passionate project can be very overwhelming and can take ages
+      to develop.
     </p>
     <p>
       I have been working on this project since December 2021. I made the first
       release on January 2023. The time difference between the first commit and
       the first release is 1 year and 640 commits on the main branch. I have
       spent sleepless nights and weekends working on this project and I almost
-      ditched it when everything was breaking. The only thing that kept me going
-      ... was my love for music and the passion for using software to solve my
-      problems.
+      ditched it when everything was breaking.
+    </p>
+    <p>
+      It can be very scary to put your work out there for the world to see. It's
+      like having a baby, but you don't want to show anyone because you fear
+      everyone will think your baby is fat instead of beautiful and adorable.
+      You can overcome by telling yourself that you have nothing to loose. If
+      people like it, good. If they don't, good. You learn from the feedback. Of
+      course some people will say something like "this is the most gen-alpha
+      bullshit I've ever seen", don't take them to heart. They are just
+      expressing their opinion. You can't please everyone.
     </p>
     <picture>
       <source
@@ -207,8 +224,13 @@ useHead({
     @media screen and (max-width: 600px) {
       flex-direction: column;
       align-items: flex-start !important;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
     }
   }
+
   img {
     width: 100%;
     object-fit: cover;
