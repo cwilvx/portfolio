@@ -19,6 +19,9 @@ export default defineNuxtConfig({
     prerender: {
       routes: ["/sitemap.xml"],
     },
+    devServer: {
+      watch: ["./content"],
+    },
   },
   ssr: false,
   routeRules: {

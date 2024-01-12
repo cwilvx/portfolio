@@ -6,11 +6,12 @@
   <Projects />
   <h2>Blog posts</h2>
   <ul class="blog-list">
-    <li v-for="post in posts" :key="post.title" class="blog">
-      <NuxtLink :to="post.link">{{ post.title }} </NuxtLink>
+    <li v-for="post in posts.slice(0, 4)" :key="post.title" class="blog">
+      <NuxtLink :to="`blog/${post.link}`">{{ post.title }} </NuxtLink>
       <span> - {{ post.date }}</span>
     </li>
   </ul>
+  <RouterLink to="/blog" v-if="posts.length > 4">See all posts</RouterLink>
   <AboutMe />
 </template>
 
