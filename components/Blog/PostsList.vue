@@ -1,8 +1,9 @@
 <template>
   <div class="postlist">
+    ❝I don't know what I think until I read what I write❞
     <ul>
-      <li v-for="post in data" :key="post.slug">
-        <nuxt-link :to="`${post._path}`">{{ post.title }}</nuxt-link>
+      <li v-for="post in posts" :key="post.link">
+        <nuxt-link :to="`${post.link}`">{{ post.title }}</nuxt-link>
         <span class="date" v-if="post.date"> - {{ post.date }} </span>
       </li>
     </ul>
@@ -10,20 +11,26 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useAsyncData(() =>
-  queryContent("/").only(["title", "date", "_path"]).find()
-);
+import posts from "~~/posts";
 </script>
 
 <style lang="scss">
 .postlist {
+  a {
+    text-decoration: none;
+  }
   ul {
     padding: 0;
   }
 
   li {
     list-style: none;
-    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-top: solid 1px rgba(128, 128, 128, 0.466);
+  }
+
+  li:last-child {
+    border-bottom: solid 1px rgba(128, 128, 128, 0.466);
   }
 
   .date {

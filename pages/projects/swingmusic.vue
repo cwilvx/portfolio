@@ -37,10 +37,6 @@
     </section>
     <br /><br />
     <picture>
-      <source
-        srcset="/swingmusic/dark/head.png"
-        media="(prefers-color-scheme: dark)"
-      />
       <nuxt-img
         src="/swingmusic/light/head.png"
         format="webp"
@@ -70,10 +66,6 @@
         to use interface was the main thing that I was going for.
       </p>
       <picture>
-        <source
-          srcset="/swingmusic/dark/1.png"
-          media="(prefers-color-scheme: dark)"
-        />
         <nuxt-img
           src="/swingmusic/light/1.png"
           format="webp"
@@ -99,10 +91,6 @@
         very performant framework and is easy to pickup as a web dev newbie.
       </p>
       <picture>
-        <source
-          srcset="/swingmusic/dark/2.png"
-          media="(prefers-color-scheme: dark)"
-        />
         <nuxt-img
           src="/swingmusic/light/2.png"
           format="webp"
@@ -144,10 +132,6 @@
       article by Josh Comeau was very helpful in understanding CSS layouts.
     </p>
     <picture>
-      <source
-        srcset="/swingmusic/dark/3.png"
-        media="(prefers-color-scheme: dark)"
-      />
       <nuxt-img
         src="/swingmusic/light/3.png"
         format="webp"
@@ -187,18 +171,12 @@
       expressing their opinion. You can't please everyone.
     </p>
     <picture>
-      <source
-        srcset="/swingmusic/dark/5.png"
-        media="(prefers-color-scheme: dark)"
-      />
       <nuxt-img
         src="/swingmusic/light/5.png"
         format="webp"
         alt="Section in artist page showing albums by Bob Dylan"
       />
     </picture>
-    <p>... and they lived happily ever after.</p>
-    <p>THE END</p>
     <br />
     <NuxtLink to="/">← Go back</NuxtLink>
   </div>

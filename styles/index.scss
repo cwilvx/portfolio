@@ -1,16 +1,12 @@
 $white: #dbd9d9;
 
 body {
-  font-family: "Roboto", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: monospace;
   color: rgb(37, 37, 37);
   font-size: 1.15rem;
   line-height: 1.5;
   background-color: white;
   margin: 0;
-}
-
-html {
-  color-scheme: dark light;
 }
 
 .rounded {
@@ -61,22 +57,6 @@ a:hover {
   color: rgb(121, 121, 252);
 }
 
-.btn {
-  border-radius: 0.35rem;
-  padding: 0.5rem 0.75rem;
-  text-decoration: none;
-  
-  &:hover {
-    outline: solid $gray1;
-    color: $white;
-  }
-}
-
-.btn-primary {
-  color: $white;
-  background-color: rgba(42, 42, 43, 0.781);
-}
-
 h1 {
   font-size: 3rem;
   margin: 1rem 0;
@@ -101,33 +81,4 @@ code {
   background-color: rgb(66, 66, 66);
   padding: 2px;
   border-radius: 0.25rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #0d0d0d;
-    color: $white;
-  }
-
-  a {
-    color: rgb(255, 255, 255);
-  }
-
-  a:visited {
-    color: rgb(255, 255, 255);
-  }
-
-  a:hover {
-    color: rgb(60, 156, 247);
-  }
-
-  h2 {
-    border-bottom: solid 1px $gray5;
-  }
-
-  code {
-    background-color: rgb(37, 37, 37);
-    padding: 2px;
-    border-radius: 0.25rem;
-  }
 }
