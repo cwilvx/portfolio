@@ -17,13 +17,13 @@
             class="btn btn-primary"
             href="https://swingmusic.vercel.app"
             target="_blank"
-            >homepage</a
+            >website</a
           >
 
           &ThickSpace;
           <a
             class="btn btn-primary"
-            href="https://github.com/geoffrey45/swingmusic"
+            href="https://github.com/cwilvx/swingmusic"
             target="_blank"
             >github</a
           >
@@ -177,8 +177,6 @@
         alt="Section in artist page showing albums by Bob Dylan"
       />
     </picture>
-    <br />
-    <NuxtLink to="/">← Go back</NuxtLink>
   </div>
 </template>
 <script setup lang="ts">

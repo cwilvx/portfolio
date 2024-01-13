@@ -1,6 +1,7 @@
 <template>
   <div class="postlist">
     ❝I don't know what I think until I read what I write❞
+    <br><br>
     <ul>
       <li v-for="post in posts" :key="post.link">
         <nuxt-link :to="`/blog/${post.link}`">{{ post.title }}</nuxt-link>

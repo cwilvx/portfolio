@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div>Hello there 👋</div>
-    <div>I'm Mungai ... and I build cool stuff! ... sometimes :)</div>
+    <div>Hello there :)</div>
+    <div>I'm Mungai, and I build cool stuff! ... sometimes</div>
   </div>
   <Projects />
   <h2>Blog posts</h2>
