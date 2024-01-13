@@ -1,7 +1,7 @@
 ---
 title: I'm learning of vectors now?
 date: 12th January, 2024
-_draft: true
+_draft: false
 ---
 
 I can't say I've ever been that interested in the whole rise of AI and the whole tech behind it so far (I've used ChatGPT to write assignments though). With that said, I'm probably one of the most clueless people when it understand come to how AI works.
