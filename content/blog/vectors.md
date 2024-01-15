@@ -1,5 +1,5 @@
 ---
-title: I'm learning of vectors now?
+title: I'm learning about vectors now?
 date: 12th January, 2024
 _draft: false
 ---
