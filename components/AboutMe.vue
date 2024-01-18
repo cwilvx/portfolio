@@ -6,7 +6,7 @@
       Swing Music for the last 2 years and I've managed to get at least 25, 000
       people to use it ... at least once.
     </p>
-    <p>If you wanna write me: geoffreymungai@gmail.com</p>
+    <p>If you wanna write me: <a href="mailto:geoffreymungai45@gmail.com">geoffreymungai45@gmail.com</a></p>
     <p></p>
     <p>
       <a href="https://github.com/cwilvx">github.com/cwilvx</a> |
