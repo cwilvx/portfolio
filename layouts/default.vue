@@ -2,7 +2,8 @@
   <div class="main">
     <header ref="logoref">
       <NuxtLink to="/">Home</NuxtLink>
-      <NuxtLink to="/blog">Blog</NuxtLink>
+      <NuxtLink to="/blog">Blog</NuxtLink> |
+      <NuxtLink to="/blog/journal">Thinking out loud!</NuxtLink>
     </header>
     <div id="page-content" class="page-content">
       <slot />

@@ -1,6 +1,7 @@
 ---
-title: I'm learning about vectors now?
+title: I'm learning about vectors ... now?
 date: 12th January, 2024
+type: journal
 _draft: false
 ---
 
@@ -24,6 +25,6 @@ I always knew that ML is used in recommendation, I have read enough "The Interne
 
 Right now, the orchestra sounds a little bit impractical. I'll have to rethink it.
 
-![Vectors Vs My Orchesra](/blog/vectors.webp)
+![Vectors Vs My Orchesra](/vectors.webp)
 
 Looks like I have a lot to learn!

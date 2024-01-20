@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ["~/styles/index.scss"],
-  modules: ["@nuxt/image-edge", "@nuxt/content", "@nuxthq/studio"],
+  modules: ["@nuxt/content"],
   app: {
     head: {
       charset: "utf-16",
@@ -23,9 +23,12 @@ export default defineNuxtConfig({
       watch: ["./content"],
     },
   },
-  ssr: false,
-  routeRules: {
-    "/": { prerender: true },
-    "/blog/**": { ssr: true },
-  },
+  // experimental: {
+  //   payloadExtraction: false,
+  // },
+  // ssr: false,
+  // routeRules: {
+  //   "/": { prerender: true },
+  //   "/blog/**": { ssr: true },
+  // },
 });

@@ -29,7 +29,7 @@ const projects = [
     description:
       "A self-hosted streaming server for your local audio files with a beautiful browser-based client. Like a cooler Spotify ... but bring your own music.",
     image: "/swing.png",
-    pagelink: "/projects/swingmusic",
+    pagelink: "/blog/swingmusic",
     website: "https://swingmusic.vercel.app",
   },
 ];

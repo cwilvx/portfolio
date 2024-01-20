@@ -9,15 +9,13 @@
           justify-content: space-between;
         "
       >
-        <h2>
-          Swing Music <CopyLinkThingIcon :link="'/projects/swingmusic'" />
-        </h2>
+        <h2>Project: Swing Music</h2>
         <div>
           <a
             class="btn btn-primary"
             href="https://swingmusic.vercel.app"
             target="_blank"
-            >website</a
+            >Website</a
           >
 
           &ThickSpace;
@@ -25,7 +23,7 @@
             class="btn btn-primary"
             href="https://github.com/cwilvx/swingmusic"
             target="_blank"
-            >github</a
+            >GitHub</a
           >
         </div>
       </div>
@@ -37,8 +35,8 @@
     </section>
     <br /><br />
     <picture>
-      <nuxt-img
-        src="/swingmusic/light/head.png"
+      <img
+        src="/head.png"
         format="webp"
         alt="Section in artist page showing albums by Bob Dylan"
       />
@@ -66,8 +64,8 @@
         to use interface was the main thing that I was going for.
       </p>
       <picture>
-        <nuxt-img
-          src="/swingmusic/light/1.png"
+        <img
+          src="/1.png"
           format="webp"
           alt="Section in artist page showing albums by Bob Dylan"
         />
@@ -91,8 +89,8 @@
         very performant framework and is easy to pickup as a web dev newbie.
       </p>
       <picture>
-        <nuxt-img
-          src="/swingmusic/light/2.png"
+        <img
+          src="/2.png"
           format="webp"
           alt="Section in artist page showing albums by Bob Dylan"
         />
@@ -132,8 +130,8 @@
       article by Josh Comeau was very helpful in understanding CSS layouts.
     </p>
     <picture>
-      <nuxt-img
-        src="/swingmusic/light/3.png"
+      <img
+        src="/3.png"
         format="webp"
         alt="Section in artist page showing albums by Troye Sivan"
       />
@@ -171,8 +169,8 @@
       expressing their opinion. You can't please everyone.
     </p>
     <picture>
-      <nuxt-img
-        src="/swingmusic/light/5.png"
+      <img
+        src="/5.png"
         format="webp"
         alt="Section in artist page showing albums by Bob Dylan"
       />

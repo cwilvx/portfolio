@@ -1,18 +1,44 @@
 <template>
   <div class="postlist">
-    ❝I don't know what I think until I read what I write❞
-    <br><br>
-    <ul>
-      <li v-for="post in posts" :key="post.link">
-        <nuxt-link :to="`/blog/${post.link}`">{{ post.title }}</nuxt-link>
+    <div v-if="!on_homepage">
+      <!-- ❝I don't know what I think until I read what I write❞
+      <br /><br /> -->
+    </div>
+    <ul v-if="articles.length">
+      <li v-for="post in articles" :key="post.link">
+        <nuxt-link :to="post._path">{{ post.title }}</nuxt-link>
         <span class="date" v-if="post.date"> - {{ post.date }} </span>
       </li>
     </ul>
+    <div v-else>
+      Nothing here!, maybe check out 
+      <NuxtLink to="/blog/journal">my open-journal</NuxtLink>.
+    </div>
+    <RouterLink to="/blog" v-if="on_homepage && articles.length > list_limit"
+      >See all posts</RouterLink
+    >
   </div>
 </template>
 
 <script setup lang="ts">
-import posts from "~~/posts";
+const list_limit = 4;
+
+const props = defineProps<{
+  on_homepage?: boolean;
+  is_journal?: boolean;
+}>();
+
+const journal_filter = props.is_journal
+  ? { type: "journal" }
+  : {
+      type: "blog",
+    };
+
+const articles = await queryContent()
+  .where({ ...journal_filter, _draft: false })
+  .only(["title", "_path", "date"])
+  .limit(props.on_homepage ? list_limit : 100)
+  .find();
 </script>
 
 <style lang="scss">
@@ -27,11 +53,6 @@ import posts from "~~/posts";
   li {
     list-style: none;
     padding: 0.5rem 0;
-    border-top: solid 1px rgba(128, 128, 128, 0.466);
-  }
-
-  li:last-child {
-    border-bottom: solid 1px rgba(128, 128, 128, 0.466);
   }
 
   .date {
