@@ -64,6 +64,12 @@ const others = [
     _path:
       "https://web.archive.org/web/20210120110316/https://www.section.io/engineering-education/debug-node-docker/",
   },
+  {
+    title: "All Section articles",
+    _path:
+      "https://web.archive.org/web/20210120093451/https://www.section.io/engineering-education/authors/geoffrey-mungai/",
+    date: "2020-12-18",
+  },
 ];
 
 const journal_filter = props.is_journal
