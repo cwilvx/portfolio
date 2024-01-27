@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <h2>Products</h2>
+    <h2>Things</h2>
     <div class="project-list">
       <div
         v-for="project in projects"

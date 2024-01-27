@@ -1,6 +1,6 @@
 ---
 title: I'm learning about vectors ... now?
-date: 12th January, 2024
+date: "2024-01-12"
 type: journal
 _draft: false
 ---

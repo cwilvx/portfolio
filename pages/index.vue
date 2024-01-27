@@ -3,7 +3,7 @@
     <img src="/wojak.webp" alt="Image: wojak!" style="width: 80px" />
     <div>
       <div>Hello there :)</div>
-      <div>I'm Mungai, and I build cool stuff! ... sometimes</div>
+      <div>I'm Mungai, and I build cool music stuff!</div>
     </div>
   </div>
   <Projects />

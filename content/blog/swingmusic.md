@@ -1,6 +1,6 @@
 ---
 title: Meet Swing Music, a Spotify for your local music
-date: 20th Jan, 2023
+date: 2023-01-20
 type: blog
 _draft: false
 ---

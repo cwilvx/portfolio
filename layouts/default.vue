@@ -9,8 +9,8 @@
       <slot />
     </div>
   </div>
-  <footer style="text-align: center; margin-bottom: .5rem;">
-    © Mungai Njoroge 2022 - {{ new Date().getFullYear() }}
+  <footer style="text-align: center; margin-bottom: 0.5rem">
+    © Mungai Njoroge - {{ new Date().getFullYear() }}
   </footer>
 </template>
 
