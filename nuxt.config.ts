@@ -1,10 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-router: {
-    options: {
-      hashMode: true
-    }
-  },
   app: {
     head: {
       charset: "utf-16",
