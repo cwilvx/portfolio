@@ -8,10 +8,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@types/tryghost__content-api": "^1.3.16",
     "nuxt": "^3.9.3"
   },
   "dependencies": {
     "@nuxt/content": "^2.10.0",
+    "@tryghost/content-api": "^1.11.21",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",
     "sitemap": "^7.1.1",
