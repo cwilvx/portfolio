@@ -1,5 +1,10 @@
 <template>
     <div>
+        <div class="about">
+            <p>Hi there 👋</p>
+
+            <p></p>
+        </div>
         <h1>All posts</h1>
         <div class="allposts">
             <div
@@ -7,11 +12,19 @@
                 :key="post.id"
                 class="postitem"
             >
-                <RouterLink :to="`/post/${post.id}`">{{
-                    post.title
-                }}</RouterLink>
+                <div class="title">
+                    <RouterLink :to="`/post/${post.id}`"
+                        ><h2>
+                            {{ post.title }}
+                        </h2>
+
+                        {{
+                    }}</RouterLink>
+                    <div class="date headingfont">
+                        {{ formatDate(post.updated_at || '') }}
+                    </div>
+                </div>
                 <div class="excerpt">{{ post.excerpt }}</div>
-                <div class="date">{{ formatDate(post.updated_at || '') }}</div>
             </div>
         </div>
     </div>
@@ -26,23 +39,23 @@ const posts = await getPosts()
 <style lang="scss">
 .postitem {
     margin: 2rem 0;
-    // padding: 1rem;
-    // border: solid 1px #0000007a;
-    // border-radius: 0.5rem;
-
     .excerpt {
         margin: 0.85rem 0;
     }
 
-    a {
-        font-weight: 700;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .date {
+            width: 9rem;
+            text-align: right;
+        }
+
+        h2 {
+            margin: 0;
+        }
     }
-
-}
-
-.date {
-    font-size: 0.8rem;
-    color: #666;
-    margin: 0.5rem 0;
 }
 </style>
