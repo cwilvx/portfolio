@@ -100,5 +100,23 @@ const post = await getSinglePost(useRoute().params.id as string)
             display: none !important;
         }
     }
+
+    code {
+        background-color: #f4f4f4;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 12px;
+    }
+
+    pre {
+        background-color: #f4f4f4;
+        padding: 1rem;
+
+        code {
+            background-color: transparent;
+            padding: 0;
+            font-size: 16px;
+        }
+    }
 }
 </style>

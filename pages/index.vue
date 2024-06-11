@@ -5,7 +5,8 @@
 
             <p></p>
         </div>
-        <h1>All posts</h1>
+        <br>
+        <h1>All writings</h1>
         <div class="allposts">
             <div
                 v-for="post in posts"

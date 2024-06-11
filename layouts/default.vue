@@ -12,15 +12,18 @@
                         width="30"
                         alt=""
                     />
-                    <h2>@cwilvx</h2></a
+                    <h2>Mungai Njoroge</h2></a
                 >
             </div>
             <ul class="right">
-                <li>
+                <!-- <li>
                     <RouterLink to="/">Archive</RouterLink>
-                </li>
+                </li> -->
+                <!-- <li>
+                    <a href="https://github.com/cwilvx">Github</a>
+                </li> -->
                 <li>
-                    <RouterLink to="/">About me</RouterLink>
+                    <RouterLink to="/">About Me</RouterLink>
                 </li>
             </ul>
         </div>
@@ -30,7 +33,12 @@
     </main>
     <footer>
         <hr />
-        <p class="headingfont"  style="text-align: center; font-size: 12px; color: gray">&copy; 2021 Mungai Njoroge.</p>
+        <p
+            class="headingfont"
+            style="text-align: center; font-size: 12px; color: gray"
+        >
+            &copy; 2021 Mungai Njoroge.
+        </p>
     </footer>
 </template>
 
